@@ -1,0 +1,45 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/audio/audio",
+    "pages/video/video",
+    "pages/news/news",
+    "pages/videodetail/videodetail",
+    "pages/audiodetail/audiodetail"
+    
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#eee",
+    "navigationBarTextStyle":"black"
+  },
+   "tabBar": {
+     "backgroundColor": "#eee",
+    "color":"#aaa",
+    "selectedColor":"#2aa515",
+    "borderStyle":"white",
+    "position":"bottom",
+
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath":"./public/image/icon/home.png",
+      "selectedIconPath":"./public/image/icon/home_selected.png"
+    }, {
+      "pagePath": "pages/audio/audio",
+      "text": "音频",
+      "iconPath":"./public/image/icon/audio.png",
+      "selectedIconPath":"./public/image/icon/audio_selected.png"
+    }, {
+      "pagePath": "pages/video/video",
+      "text": "视频",
+      "iconPath":"./public/image/icon/video.png",
+      "selectedIconPath":"./public/image/icon/video_selected.png"
+    }, {
+      "pagePath": "pages/news/news",
+      "text": "我",
+      "iconPath":"./public/image/icon/my.png",
+      "selectedIconPath":"./public/image/icon/my_selected.png"
+    }]
+  }
+}

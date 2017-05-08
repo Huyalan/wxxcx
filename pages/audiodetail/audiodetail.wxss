@@ -1,0 +1,22 @@
+.poster image{
+height: 160px;
+width: 100%;
+}
+.button{
+    display: flex;
+}
+.button button{
+    width: 60px;
+    height: 30px;
+    background-color: #fff;
+}
+.button button image{
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+}
+.geci{
+    text-align: center;
+    font: 14px/28px "";
+    color:#000;
+}

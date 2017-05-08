@@ -1,0 +1,27 @@
+<view class="poster">
+<image src="{{musicList[id].poster}}"></image>
+<audio class="audio" 
+ src="{{musicList[id].src}}" 
+ id="myAudio"
+  controls="{{false}}" 
+  bindended="endedHandle" bindtimeupdate="pro">
+  </audio>
+</view>
+<scroll-view class="geci"  scroll-y="true" style="height: {{scrollHeight}}px" scroll-into-view="a{{time1}}">
+<view wx:for="{{geci}}" wx:key="{{index}}" id="a{{index}}">{{item}}</view>
+</scroll-view>
+ <view class="button">
+  <button type="primary" bindtap="audios">
+  <image src="../../public/image/icon/syq.png"></image>
+  </button>
+    <button type="primary" bindtap="audioPlay">
+    <image src="../../public/image/icon/bf.png"></image>
+    </button>
+    <button type="primary" bindtap="audioPause">
+    <image src="../../public/image/icon/zt.png"></image>
+    </button>
+    <button type="primary" bindtap="audiox">
+    <image src="../../public/image/icon/xyq.png"></image>
+    </button>
+  </view>
+  <progress percent="{{pro}}" show-info />

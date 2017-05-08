@@ -1,0 +1,17 @@
+
+<scroll-view  scroll-y="true" style="height: {{scrollHeight}}px">
+    <view wx:for="{{movieList}}"
+     wx:for-item="music" 
+     wx:for-index="idx"    
+     wx:key="{{idx}}"
+     class="movie">
+        <view class="moviePoster">
+            <image class="img" src="{{music.poster}}" data-idx="{{idx}}" bindtap="playmovie"></image>
+        </view>
+        <view class="word">
+        <view class="movieName">电影：{{music.name}}</view>
+        <view class="movieAuthor">导演：{{music.author}}</view>
+        </view>
+     </view>
+</scroll-view>
+

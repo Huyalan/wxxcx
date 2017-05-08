@@ -1,0 +1,23 @@
+<scroll-view  scroll-y="true" style="height: {{scrollHeight}}px">
+        <view class="word">
+        <view class="movieName">姓名：陈英健</view>
+        </view>
+        <view class="word">
+        <view class="movieName">性别：男</view>
+        </view>
+        <view class="word">
+        <view class="movieName">年龄：23</view>
+        </view>
+        <view class="word">
+        <view class="movieName">学历：专科</view>
+        </view>
+        <view class="word">
+        <view class="movieName">专业：计算机信息管理</view>
+        </view>
+        <view class="word">
+        <view class="movieName">工作时间：二年</view>
+        </view>
+        <view class="word">
+        <view class="movieName">爱好：健身，游戏</view>
+        </view>
+</scroll-view>
