@@ -1,0 +1,43 @@
+<view class="box">
+<audio class="audio"  data-idx="{{music.id}}"
+poster="{{music.poster}}"
+ name="{{music.name}}" 
+ author="{{music.author}}" 
+ src="{{music.src}}" 
+ id="myAudio"
+  controls 
+  bindended="endedHandle" bindtap="todetail" bindtimeupdate="pro">
+  </audio>
+  <view class="button">
+  <button type="primary" bindtap="audios">
+  <image src="../../public/image/icon/syq.png"></image>
+  </button>
+    <button type="primary" bindtap="audioPlay">
+    <image src="../../public/image/icon/bf.png"></image>
+    </button>
+    <button type="primary" bindtap="audioPause">
+    <image src="../../public/image/icon/zt.png"></image>
+    </button>
+    <button type="primary" bindtap="audiox">
+    <image src="../../public/image/icon/xyq.png"></image>
+    </button>
+  </view>
+
+<scroll-view  scroll-y="true" style="height: {{scrollHeight}}px">
+    <view wx:for="{{musicList}}"
+     wx:for-item="music" 
+     wx:for-index="idx"    
+     wx:key="{{idx}}"
+     class="music">
+        <view class="musicPoster">
+            <image class="img" src="{{music.poster}}" data-idx="{{idx}}" bindtap="playMusic"></image>
+        </view>
+        <view class="word">
+        <view class="musicName">歌曲：{{music.name}}</view>
+        <view class="musicAuthor">歌手：{{music.author}}</view>
+        </view>
+        
+     </view>
+</scroll-view>
+
+</view>
