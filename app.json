@@ -37,7 +37,7 @@
       "selectedIconPath":"./public/image/icon/video_selected.png"
     }, {
       "pagePath": "pages/news/news",
-      "text": "我",
+      "text": "陈英健",
       "iconPath":"./public/image/icon/my.png",
       "selectedIconPath":"./public/image/icon/my_selected.png"
     }]
